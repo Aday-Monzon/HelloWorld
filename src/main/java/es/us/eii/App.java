@@ -15,7 +15,11 @@ public class App
 	
 		if (a >= 2){
 			return (fibonacci(a-1) + fibonacci(a-2));
-		}
+		}else if (a==1) {
+            		return 1;
+        	} else {
+            		return 0;
+        	}
 	
 	}
 }
