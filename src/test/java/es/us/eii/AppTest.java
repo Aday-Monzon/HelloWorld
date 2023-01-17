@@ -1,44 +1,48 @@
-package es.us.eii;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
+ */
+package com.mycompany.mavenfreestyle;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Unit test for simple App.
+ *
+ * 
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+public class MavenFreeStyleTest {
+    
+    public MavenFreeStyleTest() {
     }
 
     /**
-     * @return the suite of tests being tested
+     * Test of main method, of class MavenFreeStyle.
      */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    public void testMain() {
+        System.out.println("main");
+        String[] args = null;
+        MavenFreeStyle.main(args);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
-    /**
-     * Rigourous Test :-)
-     */
+    @Test 
     public void testFibonacci(){
-        App test = new App();
-		assertTrue(test.fibonacci(1) == 1);
+        //App test = new App();
+        MavenFreeStyle instance = new MavenFreeStyle();
+	assertTrue(instance.fibonacci(1) == 1);
     }
-	
-	public void testFibonacci2(){
-		App test = new App();
-		assertTrue(test.fibonacci(10) == 5);
-	}
-	
+    @Test	
+    public void testFibonacci2(){
+	//App test = new App();
+        MavenFreeStyle instance = new MavenFreeStyle();
+        assertTrue(instance.fibonacci(10) == 5);
+    }
+    
 }
