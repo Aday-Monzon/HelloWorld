@@ -37,14 +37,14 @@ public class MavenFreeStyleTest {
         //App test = new App();
         MavenFreeStyle instance = new MavenFreeStyle();
 	assertTrue(instance.fibonacci(1) == 1);
-	    return true;
+	    
     }
     @Test	
     public void testFibonacci2(){
 	//App test = new App();
         MavenFreeStyle instance = new MavenFreeStyle();
         assertTrue(instance.fibonacci(10) == 10946);
-	    return true;
+	    
     }
     
 }
