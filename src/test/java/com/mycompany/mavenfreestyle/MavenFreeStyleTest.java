@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * 
+ * @author olivert
  */
 public class MavenFreeStyleTest {
     
@@ -29,7 +29,7 @@ public class MavenFreeStyleTest {
         String[] args = null;
         MavenFreeStyle.main(args);
         // TODO review the generated test code and remove the default call to fail.
-        
+        //fail("The test case is a prototype.");
     }
 
     @Test 
@@ -37,14 +37,12 @@ public class MavenFreeStyleTest {
         //App test = new App();
         MavenFreeStyle instance = new MavenFreeStyle();
 	assertTrue(instance.fibonacci(1) == 1);
-	    
     }
     @Test	
     public void testFibonacci2(){
 	//App test = new App();
         MavenFreeStyle instance = new MavenFreeStyle();
-        assertTrue(instance.fibonacci(10) == 55);
-	    
+        assertTrue(instance.fibonacci(10) == 5);
     }
     
 }

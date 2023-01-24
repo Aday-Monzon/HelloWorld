@@ -1,4 +1,3 @@
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
@@ -16,10 +15,12 @@ public class MavenFreeStyle {
         System.out.println("Hello World!");
     }
     
-    public int fibonacci(int a){	
-	if (a >= 2){
-            return (fibonacci(a-1) + fibonacci(a-2));
-	}
-	return 0;
+    public int fibonacci(int a) {
+        if (a >= 2) {
+            return (fibonacci(a - 1) + fibonacci(a - 2));
+        } else if (a == 1) {
+            return 1;
+        } else
+            return 0;
     }
-}
+    }
